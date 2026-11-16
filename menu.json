@@ -6,7 +6,8 @@
         "name": "EZOGELİN ÇORBASI",
         "allergens": [
           "Gluten"
-        ]
+        ],
+        "section": "NORMAL"
       },
       {
         "name": "PİLİÇ HAŞLAMA",
@@ -14,25 +15,79 @@
           "Süt",
           "Gluten",
           "Yumurta"
-        ]
+        ],
+        "section": "NORMAL"
       },
       {
         "name": "MEYHANE PİLAVI",
         "allergens": [
           "Gluten"
-        ]
+        ],
+        "section": "NORMAL"
       },
       {
         "name": "MANDALİNA",
-        "allergens": []
+        "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "KARIŞIK SALATA",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "COSLOS SALATA",
+        "allergens": [
+          "Süt",
+          "Yumurta"
+        ],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "KIRMIZI LAHANA SALATASI",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "Z.YAĞ.KEREVİZ",
+        "allergens": [
+          "Kereviz"
+        ],
+        "section": "SALATBAR"
       }
     ],
     "AKŞAM": [
       {
+        "name": "KARIŞIK SALATA",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "COSLOS SALATA",
+        "allergens": [
+          "Süt",
+          "Yumurta"
+        ],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "KIRMIZI LAHANA SALATASI",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "Z.YAĞ.KEREVİZ",
+        "allergens": [
+          "Kereviz"
+        ],
+        "section": "SALATBAR"
+      },
+      {
         "name": "EZOGELİN ÇORBASI",
         "allergens": [
           "Gluten"
-        ]
+        ],
+        "section": "NORMAL"
       },
       {
         "name": "PİLİÇ HAŞLAMA",
@@ -40,25 +95,54 @@
           "Süt",
           "Gluten",
           "Yumurta"
-        ]
+        ],
+        "section": "NORMAL"
       },
       {
         "name": "MEYHANE PİLAVI",
         "allergens": [
           "Gluten"
-        ]
+        ],
+        "section": "NORMAL"
       },
       {
         "name": "MANDALİNA",
-        "allergens": []
+        "allergens": [],
+        "section": "NORMAL"
       }
     ],
     "GECE": [
       {
+        "name": "KARIŞIK SALATA",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "COSLOS SALATA",
+        "allergens": [
+          "Süt",
+          "Yumurta"
+        ],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "KIRMIZI LAHANA SALATASI",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "Z.YAĞ.KEREVİZ",
+        "allergens": [
+          "Kereviz"
+        ],
+        "section": "SALATBAR"
+      },
+      {
         "name": "EZOGELİN ÇORBASI",
         "allergens": [
           "Gluten"
-        ]
+        ],
+        "section": "NORMAL"
       },
       {
         "name": "PİLİÇ HAŞLAMA",
@@ -66,19 +150,22 @@
           "Süt",
           "Gluten",
           "Yumurta"
-        ]
+        ],
+        "section": "NORMAL"
       },
       {
         "name": "MEYHANE PİLAVI",
         "allergens": [
           "Gluten"
-        ]
+        ],
+        "section": "NORMAL"
       },
       {
         "name": "MANDALİNA",
-        "allergens": []
+        "allergens": [],
+        "section": "NORMAL"
       }
     ]
   },
-  "updatedAt": "2026-11-16T19:56:49.390Z"
+  "updatedAt": "2026-11-16T20:15:53.349Z"
 }
