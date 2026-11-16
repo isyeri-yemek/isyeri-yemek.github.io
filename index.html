@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bugünün Menüsü</title>
+<style>
+  :root{--bg:#f6f4ef;--card:#fff;--ink:#1f2a24;--muted:#7a857e;--accent:#2f7d4f;--accent-ink:#fff;--line:#e6e2d8;--tag:#a35a1c;--tag-bg:#fbefe0}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141815;--card:#1d231f;--ink:#e9efe9;--muted:#8a968e;--accent:#58b97f;--accent-ink:#0e1a12;--line:#2b332d;--tag:#e8b27a;--tag-bg:#33281c}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:520px;margin:0 auto;padding:24px 16px 40px}
+  h1{margin:0;font-size:1.5rem}
+  .date{color:var(--muted);margin:2px 0 18px}
+  .tabs{display:flex;gap:8px;margin-bottom:14px}
+  .tabs button{flex:1;padding:12px 8px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;font:inherit;font-weight:600;cursor:pointer}
+  .tabs button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+  ul{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:14px}
+  li{padding:14px 16px;border-top:1px solid var(--line);font-size:1.1rem}
+  li:first-child{border-top:0}
+  li.sec:first-child{border-radius:14px 14px 0 0}
+  li.sec{background:var(--bg);color:var(--muted);font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:10px 16px}
+  .tag{display:inline-block;margin:6px 6px 0 0;padding:1px 8px;border-radius:999px;background:var(--tag-bg);color:var(--tag);font-size:.72rem;font-weight:600}
+  .note{color:var(--muted);font-size:.85rem;margin-top:16px}
+  .warn{background:var(--tag-bg);color:var(--tag);padding:10px 12px;border-radius:10px;margin-bottom:14px;font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+  <h1>Bugünün Menüsü</h1>
+  <div class="date" id="date">Yükleniyor…</div>
+  <div id="warn"></div>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <ul id="list"></ul>
+  <div class="note" id="note"></div>
+</main>
+<script>
+const ORDER=[["ÖĞLE","Öğle"],["AKŞAM","Akşam"],["GECE","Gece"]];
+const $=id=>document.getElementById(id);
+const title=s=>s.toLocaleLowerCase("tr").replace(/(^|[\s(\/.-])(\p{L})/gu,(m,a,b)=>a+b.toLocaleUpperCase("tr"));
+const DAYS=["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"],MON=["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"];
+function pickMeal(avail){const h=new Date().getHours();const want=h<14?"ÖĞLE":h<20?"AKŞAM":"GECE";return avail.includes(want)?want:avail[0]}
+function safeGet(k){try{return sessionStorage.getItem(k)}catch(e){return null}}
+function safeSet(k,v){try{sessionStorage.setItem(k,v)}catch(e){}}
+const esc=s=>String(s).replace(/</g,"&lt;");
+const row=x=>`<li>${esc(title(x.name))}${x.allergens.length?"<br>"+x.allergens.map(a=>`<span class="tag">${esc(a)}</span>`).join(""):""}</li>`;
+fetch("menu.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
+  const [dd,mm,yy]=d.date.split(".").map(Number);const dt=new Date(yy,mm-1,dd);
+  $("date").textContent=`${dd} ${MON[mm-1]} ${yy}, ${DAYS[dt.getDay()]}`;
+  const now=new Date();
+  if(dt.toDateString()!==now.toDateString())$("warn").innerHTML='<div class="warn">Bu menü bugüne ait olmayabilir, güncelleme bekleniyor.</div>';
+  const avail=ORDER.map(o=>o[0]).filter(k=>d.meals[k]&&d.meals[k].length);
+  let cur=safeGet("meal");if(!avail.includes(cur))cur=pickMeal(avail);
+  function render(){
+    $("tabs").innerHTML="";
+    ORDER.filter(o=>avail.includes(o[0])).forEach(([k,label])=>{
+      const b=document.createElement("button");b.textContent=label;b.setAttribute("role","tab");b.setAttribute("aria-selected",k===cur);
+      b.onclick=()=>{cur=k;safeSet("meal",k);render()};$("tabs").appendChild(b)});
+    const items=d.meals[cur];
+    const main=items.filter(x=>x.section!=="SALATBAR"), salad=items.filter(x=>x.section==="SALATBAR");
+    $("list").innerHTML=(main.length?'<li class="sec">Yemek</li>'+main.map(row).join(""):"")+(salad.length?'<li class="sec">Salatbar</li>'+salad.map(row).join(""):"");
+  }
+  render();
+  $("note").textContent="Turuncu etiketler yemekteki alerjenleri gösterir.";
+}).catch(()=>{$("date").textContent="Menü şu an yüklenemedi, biraz sonra tekrar deneyin."});
+</script>
+</body>
+</html>
