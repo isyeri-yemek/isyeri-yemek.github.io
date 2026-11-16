@@ -113,6 +113,34 @@
     ],
     "GECE": [
       {
+        "name": "KR.MANTAR ÇORBASI",
+        "allergens": [
+          "Süt",
+          "Gluten",
+          "Yumurta"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "HAŞLAMA PATATES",
+        "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "PİKNİK TAHİN PEKMEZ(KAH)",
+        "allergens": [
+          "Susam"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "YUMURTA(KAH)",
+        "allergens": [
+          "Yumurta"
+        ],
+        "section": "NORMAL"
+      },
+      {
         "name": "KARIŞIK SALATA",
         "allergens": [],
         "section": "SALATBAR"
@@ -136,36 +164,8 @@
           "Kereviz"
         ],
         "section": "SALATBAR"
-      },
-      {
-        "name": "EZOGELİN ÇORBASI",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "PİLİÇ HAŞLAMA",
-        "allergens": [
-          "Süt",
-          "Gluten",
-          "Yumurta"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "MEYHANE PİLAVI",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "MANDALİNA",
-        "allergens": [],
-        "section": "NORMAL"
       }
     ]
   },
-  "updatedAt": "2026-11-16T20:15:53.349Z"
+  "updatedAt": "2026-11-16T20:34:27.445Z"
 }
