@@ -1,0 +1,84 @@
+{
+  "date": "16.11.2026",
+  "meals": {
+    "ÖĞLE": [
+      {
+        "name": "EZOGELİN ÇORBASI",
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "name": "PİLİÇ HAŞLAMA",
+        "allergens": [
+          "Süt",
+          "Gluten",
+          "Yumurta"
+        ]
+      },
+      {
+        "name": "MEYHANE PİLAVI",
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "name": "MANDALİNA",
+        "allergens": []
+      }
+    ],
+    "AKŞAM": [
+      {
+        "name": "EZOGELİN ÇORBASI",
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "name": "PİLİÇ HAŞLAMA",
+        "allergens": [
+          "Süt",
+          "Gluten",
+          "Yumurta"
+        ]
+      },
+      {
+        "name": "MEYHANE PİLAVI",
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "name": "MANDALİNA",
+        "allergens": []
+      }
+    ],
+    "GECE": [
+      {
+        "name": "EZOGELİN ÇORBASI",
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "name": "PİLİÇ HAŞLAMA",
+        "allergens": [
+          "Süt",
+          "Gluten",
+          "Yumurta"
+        ]
+      },
+      {
+        "name": "MEYHANE PİLAVI",
+        "allergens": [
+          "Gluten"
+        ]
+      },
+      {
+        "name": "MANDALİNA",
+        "allergens": []
+      }
+    ]
+  },
+  "updatedAt": "2026-11-16T19:28:12.629Z"
+}
