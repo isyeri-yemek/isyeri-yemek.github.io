@@ -29,7 +29,9 @@
   main{max-width:520px;margin:0 auto;padding:0 16px 40px}
   header{margin:0 -16px 18px;padding:28px 20px 56px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:var(--accent-ink);border-radius:0 0 28px 28px;transition:background .3s}
   .brand{display:inline-block;margin-bottom:10px;padding:5px 12px;border-radius:999px;background:#12233a;font-size:.78rem;font-weight:800;letter-spacing:.12em;color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.2)}
-  .brand span{color:#ff8a1f}
+  .brand span{color:var(--brand,#ff8a1f)}
+  body[data-meal="AKŞAM"]{--brand:#5aa8f0}
+  body[data-meal="GECE"]{--brand:#9a8cff}
   h1{margin:0;font-size:1.6rem;letter-spacing:-.01em}
   .date{opacity:.85;margin-top:2px;font-size:.98rem}
   .tabs{display:flex;gap:8px;margin:-34px 0 16px;padding:6px;background:var(--card);border-radius:18px;box-shadow:var(--shadow)}
