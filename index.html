@@ -7,31 +7,26 @@
 <title>Bugünün Menüsü</title>
 <style>
   :root{
-    --bg:#eef4fb;--card:#fff;--ink:#12233a;--muted:#60748a;--line:#dbe6f2;--chip:#e8f0fa;
-    --accent:#1f5fa8;--accent2:#4f9bea;--accent-ink:#fff;--tag:#1f5fa8;--tag-bg:#e6eef9;
-    --shadow:0 6px 20px rgba(31,95,168,.10)
-  }
-  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    color-scheme:dark;
     --bg:#0b1522;--card:#142336;--ink:#e6eef8;--muted:#8fa4b9;--line:#22364d;--chip:#1a2d44;
     --accent:#5aa0e6;--accent2:#2f6fb8;--accent-ink:#071424;--tag:#9cc3ef;--tag-bg:#1c3050;
-    --shadow:0 6px 20px rgba(0,0,0,.35)}}
-  /* Öğün başına renk */
-  body[data-meal="ÖĞLE"]{--accent:#e08a00;--accent2:#ffb938;--accent-ink:#2b1a00;--tag:#9a5b00;--tag-bg:#fff1d6}
-  body[data-meal="AKŞAM"]{--accent:#1f5fa8;--accent2:#4f9bea;--accent-ink:#fff}
-  body[data-meal="GECE"]{--accent:#4b3fb5;--accent2:#7d6df0;--accent-ink:#fff;--tag:#4b3fb5;--tag-bg:#e9e6fb}
-  @media (prefers-color-scheme:dark){
-    body[data-meal="ÖĞLE"]{--accent:#ffb938;--accent2:#e08a00;--accent-ink:#2b1a00;--tag:#ffd488;--tag-bg:#3a2c10}
-    body[data-meal="AKŞAM"]{--accent:#5aa0e6;--accent2:#2f6fb8;--accent-ink:#071424}
-    body[data-meal="GECE"]{--accent:#9a8cff;--accent2:#6b5be0;--accent-ink:#0f0a30;--tag:#c3baff;--tag-bg:#262050}
+    --shadow:0 6px 20px rgba(0,0,0,.35)
   }
+  /* Öğün başına renk */
+  body[data-meal="ÖĞLE"]{--accent:#ffb938;--accent2:#e08a00;--accent-ink:#2b1a00;--tag:#ffd488;--tag-bg:#3a2c10}
+  body[data-meal="AKŞAM"]{--accent:#5aa0e6;--accent2:#2f6fb8;--accent-ink:#071424}
+  body[data-meal="GECE"]{--accent:#9a8cff;--accent2:#6b5be0;--accent-ink:#0f0a30;--tag:#c3baff;--tag-bg:#262050}
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;transition:background .3s}
+  body{margin:0;min-height:100vh;background:var(--bg) linear-gradient(180deg,var(--bg-top,var(--bg)) 0,var(--bg) 85vh) no-repeat;color:var(--ink);font:17px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;transition:background .3s}
   main{max-width:520px;margin:0 auto;padding:0 16px 40px}
   header{margin:0 -16px 18px;padding:28px 20px 56px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:var(--accent-ink);border-radius:0 0 28px 28px;transition:background .3s}
   .brand{display:inline-block;margin-bottom:10px;padding:5px 12px;border-radius:999px;background:#12233a;font-size:.78rem;font-weight:800;letter-spacing:.12em;color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.2)}
   .brand span{color:var(--brand,#ff8a1f)}
   body[data-meal="AKŞAM"]{--brand:#5aa8f0}
   body[data-meal="GECE"]{--brand:#9a8cff}
+  body[data-meal="ÖĞLE"]{--bg-top:#2a1f0c}
+  body[data-meal="AKŞAM"]{--bg-top:#0e2542}
+  body[data-meal="GECE"]{--bg-top:#1a1642}
   h1{margin:0;font-size:1.6rem;letter-spacing:-.01em}
   .date{opacity:.85;margin-top:2px;font-size:.98rem}
   .tabs{display:flex;gap:8px;margin:-34px 0 16px;padding:6px;background:var(--card);border-radius:18px;box-shadow:var(--shadow)}
