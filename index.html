@@ -6,6 +6,107 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Bugünün Menüsü</title>
 <style>
+  :root{
+    --bg:#eef4fb;--card:#fff;--ink:#12233a;--muted:#60748a;--line:#dbe6f2;--chip:#e8f0fa;
+    --accent:#1f5fa8;--accent2:#4f9bea;--accent-ink:#fff;--tag:#1f5fa8;--tag-bg:#e6eef9;
+    --shadow:0 6px 20px rgba(31,95,168,.10)
+  }
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --bg:#0b1522;--card:#142336;--ink:#e6eef8;--muted:#8fa4b9;--line:#22364d;--chip:#1a2d44;
+    --accent:#5aa0e6;--accent2:#2f6fb8;--accent-ink:#071424;--tag:#9cc3ef;--tag-bg:#1c3050;
+    --shadow:0 6px 20px rgba(0,0,0,.35)}}
+  /* Öğün başına renk */
+  body[data-meal="ÖĞLE"]{--accent:#e08a00;--accent2:#ffb938;--accent-ink:#2b1a00;--tag:#9a5b00;--tag-bg:#fff1d6}
+  body[data-meal="AKŞAM"]{--accent:#1f5fa8;--accent2:#4f9bea;--accent-ink:#fff}
+  body[data-meal="GECE"]{--accent:#4b3fb5;--accent2:#7d6df0;--accent-ink:#fff;--tag:#4b3fb5;--tag-bg:#e9e6fb}
+  @media (prefers-color-scheme:dark){
+    body[data-meal="ÖĞLE"]{--accent:#ffb938;--accent2:#e08a00;--accent-ink:#2b1a00;--tag:#ffd488;--tag-bg:#3a2c10}
+    body[data-meal="AKŞAM"]{--accent:#5aa0e6;--accent2:#2f6fb8;--accent-ink:#071424}
+    body[data-meal="GECE"]{--accent:#9a8cff;--accent2:#6b5be0;--accent-ink:#0f0a30;--tag:#c3baff;--tag-bg:#262050}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;transition:background .3s}
+  main{max-width:520px;margin:0 auto;padding:0 16px 40px}
+  header{margin:0 -16px 18px;padding:28px 20px 56px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:var(--accent-ink);border-radius:0 0 28px 28px;transition:background .3s}
+  .brand{display:inline-block;margin-bottom:10px;padding:5px 12px;border-radius:999px;background:#12233a;font-size:.78rem;font-weight:800;letter-spacing:.12em;color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+  .brand span{color:#ff8a1f}
+  h1{margin:0;font-size:1.6rem;letter-spacing:-.01em}
+  .date{opacity:.85;margin-top:2px;font-size:.98rem}
+  .tabs{display:flex;gap:8px;margin:-34px 0 16px;padding:6px;background:var(--card);border-radius:18px;box-shadow:var(--shadow)}
+  .tabs button{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 6px;border:0;background:transparent;color:var(--muted);border-radius:13px;font:inherit;font-size:.9rem;font-weight:650;cursor:pointer;transition:.2s}
+  .tabs button svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .tabs button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink);box-shadow:0 4px 12px rgba(0,0,0,.18)}
+  .tabs button:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+  .sec{display:flex;align-items:center;gap:8px;margin:20px 4px 8px;color:var(--muted);font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+  .sec svg{width:18px;height:18px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .salad-sec svg{stroke:#3fae6a}
+  ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+  li{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:14px;padding:13px 16px;font-size:1.08rem;font-weight:560;box-shadow:var(--shadow)}
+  ul.salad li{border-left-color:#3fae6a;font-weight:500}
+  .tag{display:inline-block;margin:6px 6px 0 0;padding:1px 9px;border-radius:999px;background:var(--tag-bg);color:var(--tag);font-size:.72rem;font-weight:650}
+  .note{color:var(--muted);font-size:.85rem;margin-top:22px;text-align:center}
+  .warn{background:var(--tag-bg);color:var(--tag);padding:10px 12px;border-radius:12px;margin-bottom:14px;font-size:.9rem}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body data-meal="ÖĞLE">
+<main>
+  <header>
+    <div class="brand"><b>YAZAKI WIRING</b> <span>MUDANYA</span></div>
+    <h1>Bugünün Menüsü</h1>
+    <div class="date" id="date">Yükleniyor…</div>
+  </header>
+  <div class="tabs" role="tablist" id="tabs"></div>
+  <div id="warn"></div>
+  <div id="list"></div>
+  <div class="note" id="note"></div>
+</main>
+<script>
+const ORDER=[["ÖĞLE","Öğle"],["AKŞAM","Akşam"],["GECE","Gece"]];
+const ICON={
+ "ÖĞLE":'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+ "AKŞAM":'<svg viewBox="0 0 24 24"><path d="M3 18h18M6 18a6 6 0 0 1 12 0M12 6v3M4.6 10.6l1.8 1.2M19.4 10.6l-1.8 1.2"/></svg>',
+ "GECE":'<svg viewBox="0 0 24 24"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg>'};
+const ICON_FOOD='<svg viewBox="0 0 24 24"><path d="M6 3v8a2 2 0 0 0 2 2v8M10 3v8M8 3v18M18 3c-2 2-3 5-3 8h3v10"/></svg>';
+const ICON_SALAD='<svg viewBox="0 0 24 24"><path d="M4 12h16a8 8 0 0 1-16 0zM8 12c0-3 2-5 4-5s4 2 4 5M12 7V4"/></svg>';
+const $=id=>document.getElementById(id);
+const title=s=>s.toLocaleLowerCase("tr").replace(/(^|[\s(\/.-])(\p{L})/gu,(m,a,b)=>a+b.toLocaleUpperCase("tr"));
+const DAYS=["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"],MON=["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"];
+const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const row=x=>`<li>${esc(title(x.name))}${x.allergens.length?"<br>"+x.allergens.map(a=>`<span class="tag">${esc(a)}</span>`).join(""):""}</li>`;
+const saladRow=x=>`<li>${esc(title(x.name))}</li>`;
+fetch("menu.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
+  const [dd,mm,yy]=d.date.split(".").map(Number);const dt=new Date(yy,mm-1,dd);
+  $("date").textContent=`${dd} ${MON[mm-1]} ${yy}, ${DAYS[dt.getDay()]}`;
+  if(dt.toDateString()!==new Date().toDateString())$("warn").innerHTML='<div class="warn">Bu menü bugüne ait olmayabilir, güncelleme bekleniyor.</div>';
+  const avail=ORDER.map(o=>o[0]).filter(k=>d.meals[k]&&d.meals[k].length);
+  let cur=avail.includes("ÖĞLE")?"ÖĞLE":avail[0];
+  function render(){
+    document.body.dataset.meal=cur;
+    $("tabs").innerHTML="";
+    ORDER.filter(o=>avail.includes(o[0])).forEach(([k,label])=>{
+      const b=document.createElement("button");b.setAttribute("role","tab");b.setAttribute("aria-selected",k===cur);
+      b.innerHTML=ICON[k]+"<span>"+label+"</span>";
+      b.onclick=()=>{cur=k;render()};$("tabs").appendChild(b)});
+    const items=d.meals[cur];
+    const main=items.filter(x=>x.section!=="SALATBAR"),salad=items.filter(x=>x.section==="SALATBAR");
+    $("list").innerHTML=(main.length?`<div class="sec">${ICON_FOOD}Yemek</div><ul>${main.map(row).join("")}</ul>`:"")
+      +(salad.length?`<div class="sec salad-sec">${ICON_SALAD}Salatabar</div><ul class="salad">${salad.map(saladRow).join("")}</ul>`:"");
+  }
+  render();
+  $("note").textContent="Generated by Eray";
+}).catch(()=>{$("date").textContent="Menü şu an yüklenemedi, biraz sonra tekrar deneyin."});
+</script>
+</body>
+</html>
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bugünün Menüsü</title>
+<style>
   :root{--bg:#f3f7fc;--card:#fff;--ink:#13233a;--muted:#5f7184;--accent:#1f5fa8;--accent-ink:#fff;--line:#dbe5f0;--tag:#1f5fa8;--tag-bg:#e6eef9}
   @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1826;--card:#152536;--ink:#e6eef8;--muted:#8ea3b8;--accent:#5aa0e6;--accent-ink:#071424;--line:#22364d;--tag:#9cc3ef;--tag-bg:#1c3050}}
   *{box-sizing:border-box}
