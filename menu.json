@@ -1,16 +1,9 @@
 {
-  "date": "16.11.2026",
+  "date": "17.11.2026",
   "meals": {
     "ÖĞLE": [
       {
-        "name": "EZOGELİN ÇORBASI",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "PİLİÇ HAŞLAMA",
+        "name": "TAVUK SUYU ÇORBA",
         "allergens": [
           "Süt",
           "Gluten",
@@ -19,78 +12,66 @@
         "section": "NORMAL"
       },
       {
-        "name": "MEYHANE PİLAVI",
+        "name": "NOHUT",
         "allergens": [
           "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "MANDALİNA",
-        "allergens": [],
+        "name": "ARPA ŞEH. PİRİNÇ PİLAVI",
+        "allergens": [
+          "Gluten"
+        ],
         "section": "NORMAL"
       },
       {
-        "name": "KARIŞIK SALATA",
-        "allergens": [],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "COSLOS SALATA",
+        "name": "SICAK SÜT HELVASI",
         "allergens": [
           "Süt",
+          "Gluten",
           "Yumurta"
         ],
-        "section": "SALATBAR"
+        "section": "NORMAL"
       },
       {
-        "name": "KIRMIZI LAHANA SALATASI",
+        "name": "KIRMIZI BAHAR SALATASI",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "Z.YAĞ.KEREVİZ",
+        "name": "Z.YAĞ.BROKOLİ",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "CACIK",
         "allergens": [
-          "Kereviz"
+          "Süt"
         ],
         "section": "SALATBAR"
       }
     ],
     "AKŞAM": [
       {
-        "name": "KARIŞIK SALATA",
+        "name": "KIRMIZI BAHAR SALATASI",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "COSLOS SALATA",
-        "allergens": [
-          "Süt",
-          "Yumurta"
-        ],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "KIRMIZI LAHANA SALATASI",
+        "name": "Z.YAĞ.BROKOLİ",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "Z.YAĞ.KEREVİZ",
+        "name": "CACIK",
         "allergens": [
-          "Kereviz"
+          "Süt"
         ],
         "section": "SALATBAR"
       },
       {
-        "name": "EZOGELİN ÇORBASI",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "PİLİÇ HAŞLAMA",
+        "name": "TAVUK SUYU ÇORBA",
         "allergens": [
           "Süt",
           "Gluten",
@@ -99,21 +80,32 @@
         "section": "NORMAL"
       },
       {
-        "name": "MEYHANE PİLAVI",
+        "name": "NOHUT",
         "allergens": [
           "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "MANDALİNA",
-        "allergens": [],
+        "name": "ARPA ŞEH. PİRİNÇ PİLAVI",
+        "allergens": [
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "SICAK SÜT HELVASI",
+        "allergens": [
+          "Süt",
+          "Gluten",
+          "Yumurta"
+        ],
         "section": "NORMAL"
       }
     ],
     "GECE": [
       {
-        "name": "KR.MANTAR ÇORBASI",
+        "name": "TAVUK SUYU ÇORBA",
         "allergens": [
           "Süt",
           "Gluten",
@@ -122,50 +114,44 @@
         "section": "NORMAL"
       },
       {
-        "name": "HAŞLAMA PATATES",
-        "allergens": [],
-        "section": "NORMAL"
-      },
-      {
-        "name": "PİKNİK TAHİN PEKMEZ(KAH)",
-        "allergens": [
-          "Susam"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "YUMURTA(KAH)",
-        "allergens": [
-          "Yumurta"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "KARIŞIK SALATA",
-        "allergens": [],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "COSLOS SALATA",
+        "name": "ÜZÜMLÜ KURABİYE",
         "allergens": [
           "Süt",
+          "Gluten",
           "Yumurta"
         ],
-        "section": "SALATBAR"
+        "section": "NORMAL"
       },
       {
-        "name": "KIRMIZI LAHANA SALATASI",
+        "name": "PİKNİK BAL(KAH)",
+        "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "SÜT KG",
+        "allergens": [
+          "Süt"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "KIRMIZI BAHAR SALATASI",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "Z.YAĞ.KEREVİZ",
+        "name": "Z.YAĞ.BROKOLİ",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "CACIK",
         "allergens": [
-          "Kereviz"
+          "Süt"
         ],
         "section": "SALATBAR"
       }
     ]
   },
-  "updatedAt": "2026-11-16T20:34:27.445Z"
+  "updatedAt": "2026-11-17T15:50:16.709Z"
 }
