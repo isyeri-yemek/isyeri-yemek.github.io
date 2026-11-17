@@ -133,25 +133,8 @@
           "Süt"
         ],
         "section": "NORMAL"
-      },
-      {
-        "name": "KIRMIZI BAHAR SALATASI",
-        "allergens": [],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "Z.YAĞ.BROKOLİ",
-        "allergens": [],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "CACIK",
-        "allergens": [
-          "Süt"
-        ],
-        "section": "SALATBAR"
       }
     ]
   },
-  "updatedAt": "2026-11-17T15:50:16.709Z"
+  "updatedAt": "2026-11-17T15:55:36.196Z"
 }
