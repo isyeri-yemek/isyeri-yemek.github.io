@@ -1,140 +1,161 @@
 {
-  "date": "17.11.2026",
+  "date": "18.11.2026",
   "meals": {
     "ÖĞLE": [
       {
-        "name": "TAVUK SUYU ÇORBA",
-        "allergens": [
-          "Süt",
-          "Gluten",
-          "Yumurta"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "NOHUT",
+        "name": "TARHANA ÇORBASI",
         "allergens": [
           "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "ARPA ŞEH. PİRİNÇ PİLAVI",
-        "allergens": [
-          "Gluten"
-        ],
+        "name": "COLA PET 250",
+        "allergens": [],
         "section": "NORMAL"
       },
       {
-        "name": "SICAK SÜT HELVASI",
+        "name": "YEDİGÜN PET 250",
+        "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "BİSKÜVİLİ PRENSES TATLISI",
         "allergens": [
           "Süt",
           "Gluten",
-          "Yumurta"
+          "Sert kabuklu"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "KIRMIZI BAHAR SALATASI",
+        "name": "PİLAV ÜSTÜ ET DÖNER",
         "allergens": [],
-        "section": "SALATBAR"
+        "section": "NORMAL"
       },
       {
-        "name": "Z.YAĞ.BROKOLİ",
-        "allergens": [],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "CACIK",
+        "name": "RUS SALATASI",
         "allergens": [
-          "Süt"
+          "Süt",
+          "Yumurta"
         ],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "PANCAR TARAMA",
+        "allergens": [
+          "Süt",
+          "Gluten"
+        ],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "MISIRLI MARUL SALATASI",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "Z.YAĞ.KABAK",
+        "allergens": [],
         "section": "SALATBAR"
       }
     ],
     "AKŞAM": [
       {
-        "name": "KIRMIZI BAHAR SALATASI",
-        "allergens": [],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "Z.YAĞ.BROKOLİ",
-        "allergens": [],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "CACIK",
-        "allergens": [
-          "Süt"
-        ],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "TAVUK SUYU ÇORBA",
+        "name": "RUS SALATASI",
         "allergens": [
           "Süt",
-          "Gluten",
           "Yumurta"
         ],
-        "section": "NORMAL"
+        "section": "SALATBAR"
       },
       {
-        "name": "NOHUT",
+        "name": "PANCAR TARAMA",
+        "allergens": [
+          "Süt",
+          "Gluten"
+        ],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "MISIRLI MARUL SALATASI",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "Z.YAĞ.KABAK",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "TARHANA ÇORBASI",
         "allergens": [
           "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "ARPA ŞEH. PİRİNÇ PİLAVI",
+        "name": "COLA PET 250",
+        "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "YEDİGÜN PET 250",
+        "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "BİSKÜVİLİ PRENSES TATLISI",
         "allergens": [
-          "Gluten"
+          "Süt",
+          "Gluten",
+          "Sert kabuklu"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "SICAK SÜT HELVASI",
-        "allergens": [
-          "Süt",
-          "Gluten",
-          "Yumurta"
-        ],
+        "name": "PİLAV ÜSTÜ ET DÖNER",
+        "allergens": [],
         "section": "NORMAL"
       }
     ],
     "GECE": [
       {
-        "name": "TAVUK SUYU ÇORBA",
+        "name": "TARHANA ÇORBASI",
         "allergens": [
-          "Süt",
-          "Gluten",
-          "Yumurta"
+          "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "ÜZÜMLÜ KURABİYE",
+        "name": "CEVİZLİ LOKUM",
         "allergens": [
-          "Süt",
+          "Susam",
           "Gluten",
-          "Yumurta"
+          "Yumurta",
+          "Sert kabuklu"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "PİKNİK BAL(KAH)",
+        "name": "YEŞİLLİK",
         "allergens": [],
         "section": "NORMAL"
       },
       {
-        "name": "SÜT KG",
+        "name": "PİKNİK REÇEL(KAH)",
+        "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "PEYNİRLİ OMLET",
         "allergens": [
-          "Süt"
+          "Süt",
+          "Yumurta"
         ],
         "section": "NORMAL"
       }
     ]
   },
-  "updatedAt": "2026-11-17T15:55:36.196Z"
+  "updatedAt": "2026-11-18T03:44:24.511Z"
 }
