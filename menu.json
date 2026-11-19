@@ -1,161 +1,131 @@
 {
-  "date": "18.11.2026",
+  "date": "19.11.2026",
   "meals": {
     "ÖĞLE": [
       {
-        "name": "TARHANA ÇORBASI",
+        "name": "MERCİMEK ÇORBASI",
         "allergens": [
           "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "COLA PET 250",
-        "allergens": [],
-        "section": "NORMAL"
-      },
-      {
-        "name": "YEDİGÜN PET 250",
-        "allergens": [],
-        "section": "NORMAL"
-      },
-      {
-        "name": "BİSKÜVİLİ PRENSES TATLISI",
+        "name": "MENGEN MUSAKKA",
         "allergens": [
-          "Süt",
-          "Gluten",
-          "Sert kabuklu"
+          "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "PİLAV ÜSTÜ ET DÖNER",
+        "name": "PİRİNÇ PİLAVI",
         "allergens": [],
         "section": "NORMAL"
       },
       {
-        "name": "RUS SALATASI",
+        "name": "TAHİNLİ KUP",
         "allergens": [
           "Süt",
-          "Yumurta"
+          "Susam",
+          "Gluten"
         ],
-        "section": "SALATBAR"
+        "section": "NORMAL"
       },
       {
-        "name": "PANCAR TARAMA",
+        "name": "KUSKUS SALATA",
         "allergens": [
-          "Süt",
           "Gluten"
         ],
         "section": "SALATBAR"
       },
       {
-        "name": "MISIRLI MARUL SALATASI",
+        "name": "HAVUÇLU MARUL SALATA",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "Z.YAĞ.KABAK",
+        "name": "Z.YAĞ.ISPANAK",
         "allergens": [],
         "section": "SALATBAR"
       }
     ],
     "AKŞAM": [
       {
-        "name": "RUS SALATASI",
+        "name": "KUSKUS SALATA",
         "allergens": [
-          "Süt",
-          "Yumurta"
-        ],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "PANCAR TARAMA",
-        "allergens": [
-          "Süt",
           "Gluten"
         ],
         "section": "SALATBAR"
       },
       {
-        "name": "MISIRLI MARUL SALATASI",
+        "name": "HAVUÇLU MARUL SALATA",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "Z.YAĞ.KABAK",
+        "name": "Z.YAĞ.ISPANAK",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "TARHANA ÇORBASI",
+        "name": "MERCİMEK ÇORBASI",
         "allergens": [
           "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "COLA PET 250",
-        "allergens": [],
-        "section": "NORMAL"
-      },
-      {
-        "name": "YEDİGÜN PET 250",
-        "allergens": [],
-        "section": "NORMAL"
-      },
-      {
-        "name": "BİSKÜVİLİ PRENSES TATLISI",
+        "name": "MENGEN MUSAKKA",
         "allergens": [
-          "Süt",
-          "Gluten",
-          "Sert kabuklu"
+          "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "PİLAV ÜSTÜ ET DÖNER",
+        "name": "PİRİNÇ PİLAVI",
         "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "TAHİNLİ KUP",
+        "allergens": [
+          "Süt",
+          "Susam",
+          "Gluten"
+        ],
         "section": "NORMAL"
       }
     ],
     "GECE": [
       {
-        "name": "TARHANA ÇORBASI",
+        "name": "MERCİMEK ÇORBASI",
         "allergens": [
           "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "CEVİZLİ LOKUM",
+        "name": "POĞAÇA PEYNİRLİ",
         "allergens": [
-          "Susam",
+          "Süt",
           "Gluten",
           "Yumurta",
-          "Sert kabuklu"
+          "Susam"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "YEŞİLLİK",
+        "name": "PİKNİK BAL(KAH)",
         "allergens": [],
         "section": "NORMAL"
       },
       {
-        "name": "PİKNİK REÇEL(KAH)",
-        "allergens": [],
-        "section": "NORMAL"
-      },
-      {
-        "name": "PEYNİRLİ OMLET",
+        "name": "SÜT KG",
         "allergens": [
-          "Süt",
-          "Yumurta"
+          "Süt"
         ],
         "section": "NORMAL"
       }
     ]
   },
-  "updatedAt": "2026-11-18T04:51:13.078Z"
+  "updatedAt": "2026-11-19T03:44:48.871Z"
 }
