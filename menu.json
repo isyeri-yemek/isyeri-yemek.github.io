@@ -1,131 +1,145 @@
 {
-  "date": "19.11.2026",
+  "date": "20.11.2026",
   "meals": {
     "ÖĞLE": [
       {
-        "name": "MERCİMEK ÇORBASI",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "MENGEN MUSAKKA",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "PİRİNÇ PİLAVI",
-        "allergens": [],
-        "section": "NORMAL"
-      },
-      {
-        "name": "TAHİNLİ KUP",
+        "name": "NANELİ YOĞURT ÇORBASI",
         "allergens": [
           "Süt",
-          "Susam",
-          "Gluten"
+          "Gluten",
+          "Yumurta"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "KUSKUS SALATA",
+        "name": "PİLİÇ TOPKAPI",
         "allergens": [
-          "Gluten"
+          "Sert kabuklu"
         ],
-        "section": "SALATBAR"
+        "section": "NORMAL"
       },
       {
-        "name": "HAVUÇLU MARUL SALATA",
+        "name": "GÜL BÖREK PATATESLİ",
+        "allergens": [
+          "Süt",
+          "Gluten",
+          "Yumurta"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "KOKTEYL KOMPOSTO",
+        "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "MEVSİM SALATA",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "Z.YAĞ.ISPANAK",
+        "name": "PEMBE SULTAN",
+        "allergens": [
+          "Süt"
+        ],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "NOHUTLU SALATA",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "Z.YAĞ.BEZELYE",
         "allergens": [],
         "section": "SALATBAR"
       }
     ],
     "AKŞAM": [
       {
-        "name": "KUSKUS SALATA",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "HAVUÇLU MARUL SALATA",
+        "name": "MEVSİM SALATA",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "Z.YAĞ.ISPANAK",
+        "name": "PEMBE SULTAN",
+        "allergens": [
+          "Süt"
+        ],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "NOHUTLU SALATA",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "MERCİMEK ÇORBASI",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "MENGEN MUSAKKA",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "PİRİNÇ PİLAVI",
+        "name": "Z.YAĞ.BEZELYE",
         "allergens": [],
-        "section": "NORMAL"
+        "section": "SALATBAR"
       },
       {
-        "name": "TAHİNLİ KUP",
+        "name": "NANELİ YOĞURT ÇORBASI",
         "allergens": [
           "Süt",
-          "Susam",
-          "Gluten"
+          "Gluten",
+          "Yumurta"
         ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "PİLİÇ TOPKAPI",
+        "allergens": [
+          "Sert kabuklu"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "GÜL BÖREK PATATESLİ",
+        "allergens": [
+          "Süt",
+          "Gluten",
+          "Yumurta"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "KOKTEYL KOMPOSTO",
+        "allergens": [],
         "section": "NORMAL"
       }
     ],
     "GECE": [
       {
-        "name": "MERCİMEK ÇORBASI",
+        "name": "KIŞ ÇORBASI",
+        "allergens": [
+          "Süt",
+          "Yumurta",
+          "Gluten",
+          "Kereviz"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "SOSLU SOSİS",
         "allergens": [
           "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "POĞAÇA PEYNİRLİ",
+        "name": "SİGARA BÖREĞİ",
         "allergens": [
-          "Süt",
-          "Gluten",
-          "Yumurta",
-          "Susam"
+          "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "PİKNİK BAL(KAH)",
+        "name": "YEŞİLLİK",
         "allergens": [],
-        "section": "NORMAL"
-      },
-      {
-        "name": "SÜT KG",
-        "allergens": [
-          "Süt"
-        ],
         "section": "NORMAL"
       }
     ]
   },
-  "updatedAt": "2026-11-19T04:54:02.563Z"
+  "updatedAt": "2026-11-20T03:41:48.461Z"
 }
