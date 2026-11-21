@@ -1,9 +1,30 @@
 {
-  "date": "20.11.2026",
+  "date": "21.11.2026",
   "meals": {
     "ÖĞLE": [
       {
-        "name": "NANELİ YOĞURT ÇORBASI",
+        "name": "KAZDAĞI ÇORBASI",
+        "allergens": [
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "FIRIN KARNABAHAR",
+        "allergens": [
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "MANTI MAKARNA",
+        "allergens": [
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "MEYVELİ DİLİMLER",
         "allergens": [
           "Süt",
           "Gluten",
@@ -12,134 +33,105 @@
         "section": "NORMAL"
       },
       {
-        "name": "PİLİÇ TOPKAPI",
-        "allergens": [
-          "Sert kabuklu"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "GÜL BÖREK PATATESLİ",
-        "allergens": [
-          "Süt",
-          "Gluten",
-          "Yumurta"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "KOKTEYL KOMPOSTO",
-        "allergens": [],
-        "section": "NORMAL"
-      },
-      {
-        "name": "MEVSİM SALATA",
+        "name": "YEŞİL SALATA",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "PEMBE SULTAN",
-        "allergens": [
-          "Süt"
-        ],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "NOHUTLU SALATA",
+        "name": "KIRMIZI LAHANA SALATASI",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "Z.YAĞ.BEZELYE",
+        "name": "Z.YAĞ.BRÜKSEL LAHANA",
         "allergens": [],
         "section": "SALATBAR"
       }
     ],
     "AKŞAM": [
       {
-        "name": "MEVSİM SALATA",
+        "name": "YEŞİL SALATA",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "PEMBE SULTAN",
+        "name": "KIRMIZI LAHANA SALATASI",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "Z.YAĞ.BRÜKSEL LAHANA",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "KAZDAĞI ÇORBASI",
         "allergens": [
-          "Süt"
+          "Gluten"
         ],
-        "section": "SALATBAR"
+        "section": "NORMAL"
       },
       {
-        "name": "NOHUTLU SALATA",
-        "allergens": [],
-        "section": "SALATBAR"
+        "name": "FIRIN KARNABAHAR",
+        "allergens": [
+          "Gluten"
+        ],
+        "section": "NORMAL"
       },
       {
-        "name": "Z.YAĞ.BEZELYE",
-        "allergens": [],
-        "section": "SALATBAR"
+        "name": "MANTI MAKARNA",
+        "allergens": [
+          "Gluten"
+        ],
+        "section": "NORMAL"
       },
       {
-        "name": "NANELİ YOĞURT ÇORBASI",
+        "name": "MEYVELİ DİLİMLER",
         "allergens": [
           "Süt",
           "Gluten",
           "Yumurta"
         ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "PİLİÇ TOPKAPI",
-        "allergens": [
-          "Sert kabuklu"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "GÜL BÖREK PATATESLİ",
-        "allergens": [
-          "Süt",
-          "Gluten",
-          "Yumurta"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "KOKTEYL KOMPOSTO",
-        "allergens": [],
         "section": "NORMAL"
       }
     ],
     "GECE": [
       {
-        "name": "KIŞ ÇORBASI",
+        "name": "KÖZBİBER ÇORBASI",
+        "allergens": [
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "PATATESLİ POĞAÇA",
         "allergens": [
           "Süt",
-          "Yumurta",
           "Gluten",
-          "Kereviz"
+          "Yumurta"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "SOSLU SOSİS",
+        "name": "KAŞAR PEYNİRİ(KAH)",
         "allergens": [
-          "Gluten"
+          "Süt"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "SİGARA BÖREĞİ",
+        "name": "PİKNİK TAHİN PEKMEZ(KAH)",
         "allergens": [
-          "Gluten"
+          "Susam"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "YEŞİLLİK",
+        "name": "PİKNİK ACUKA(KAH)",
         "allergens": [],
         "section": "NORMAL"
       }
     ]
   },
-  "updatedAt": "2026-11-20T04:51:11.902Z"
+  "updatedAt": "2026-11-21T03:40:18.412Z"
 }
