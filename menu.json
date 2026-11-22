@@ -1,101 +1,7 @@
 {
-  "date": "21.11.2026",
+  "date": "22.11.2026",
   "meals": {
     "ÖĞLE": [
-      {
-        "name": "KAZDAĞI ÇORBASI",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "FIRIN KARNABAHAR",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "MANTI MAKARNA",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "MEYVELİ DİLİMLER",
-        "allergens": [
-          "Süt",
-          "Gluten",
-          "Yumurta"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "YEŞİL SALATA",
-        "allergens": [],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "KIRMIZI LAHANA SALATASI",
-        "allergens": [],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "Z.YAĞ.BRÜKSEL LAHANA",
-        "allergens": [],
-        "section": "SALATBAR"
-      }
-    ],
-    "AKŞAM": [
-      {
-        "name": "YEŞİL SALATA",
-        "allergens": [],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "KIRMIZI LAHANA SALATASI",
-        "allergens": [],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "Z.YAĞ.BRÜKSEL LAHANA",
-        "allergens": [],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "KAZDAĞI ÇORBASI",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "FIRIN KARNABAHAR",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "MANTI MAKARNA",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "MEYVELİ DİLİMLER",
-        "allergens": [
-          "Süt",
-          "Gluten",
-          "Yumurta"
-        ],
-        "section": "NORMAL"
-      }
-    ],
-    "GECE": [
       {
         "name": "KÖZBİBER ÇORBASI",
         "allergens": [
@@ -104,34 +10,95 @@
         "section": "NORMAL"
       },
       {
-        "name": "PATATESLİ POĞAÇA",
+        "name": "IZGARA PİLİÇ/GAR.PATATES",
+        "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "PEYNİRLİ ERİŞTE",
         "allergens": [
           "Süt",
-          "Gluten",
-          "Yumurta"
+          "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "KAŞAR PEYNİRİ(KAH)",
+        "name": "İNCİR UYUTMASI",
+        "allergens": [
+          "Süt",
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "MEVSİM SALATA",
+        "allergens": [],
+        "section": "SALATBAR"
+      }
+    ],
+    "AKŞAM": [
+      {
+        "name": "MEVSİM SALATA",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "KÖZBİBER ÇORBASI",
+        "allergens": [
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "IZGARA PİLİÇ/GAR.PATATES",
+        "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "PEYNİRLİ ERİŞTE",
+        "allergens": [
+          "Süt",
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "İNCİR UYUTMASI",
+        "allergens": [
+          "Süt",
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      }
+    ],
+    "GECE": [
+      {
+        "name": "KÖYLÜ ÇORBA",
+        "allergens": [
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "YEŞİLLİK",
+        "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "BEYAZ PEYNİR(KAH)",
         "allergens": [
           "Süt"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "PİKNİK TAHİN PEKMEZ(KAH)",
+        "name": "YUMURTA(KAH)",
         "allergens": [
-          "Susam"
+          "Yumurta"
         ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "PİKNİK ACUKA(KAH)",
-        "allergens": [],
         "section": "NORMAL"
       }
     ]
   },
-  "updatedAt": "2026-11-21T04:47:55.923Z"
+  "updatedAt": "2026-11-22T03:41:54.094Z"
 }
