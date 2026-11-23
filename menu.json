@@ -1,69 +1,113 @@
 {
-  "date": "22.11.2026",
+  "date": "23.11.2026",
   "meals": {
     "ÖĞLE": [
       {
-        "name": "KÖZBİBER ÇORBASI",
+        "name": "ANTEP ÇORBA",
         "allergens": [
           "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "IZGARA PİLİÇ/GAR.PATATES",
+        "name": "ETLİ LAHANA SARMA",
+        "allergens": [
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "SEBZELİ AVCI BÖREĞİ",
+        "allergens": [
+          "Gluten",
+          "Yumurta"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "GAR.YOĞURT",
+        "allergens": [
+          "Süt"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "ŞAMBALİ TATLISI",
+        "allergens": [
+          "Süt",
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "RUS SALATASI",
+        "allergens": [
+          "Süt",
+          "Yumurta"
+        ],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "YEŞİL SALATA",
         "allergens": [],
-        "section": "NORMAL"
+        "section": "SALATBAR"
       },
       {
-        "name": "PEYNİRLİ ERİŞTE",
-        "allergens": [
-          "Süt",
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "İNCİR UYUTMASI",
-        "allergens": [
-          "Süt",
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "MEVSİM SALATA",
+        "name": "Z.YAĞ.PIRASA",
         "allergens": [],
         "section": "SALATBAR"
       }
     ],
     "AKŞAM": [
       {
-        "name": "MEVSİM SALATA",
+        "name": "RUS SALATASI",
+        "allergens": [
+          "Süt",
+          "Yumurta"
+        ],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "YEŞİL SALATA",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "KÖZBİBER ÇORBASI",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "IZGARA PİLİÇ/GAR.PATATES",
+        "name": "Z.YAĞ.PIRASA",
         "allergens": [],
-        "section": "NORMAL"
+        "section": "SALATBAR"
       },
       {
-        "name": "PEYNİRLİ ERİŞTE",
+        "name": "ANTEP ÇORBA",
         "allergens": [
-          "Süt",
           "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "İNCİR UYUTMASI",
+        "name": "ETLİ LAHANA SARMA",
+        "allergens": [
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "SEBZELİ AVCI BÖREĞİ",
+        "allergens": [
+          "Gluten",
+          "Yumurta"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "GAR.YOĞURT",
+        "allergens": [
+          "Süt"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "ŞAMBALİ TATLISI",
         "allergens": [
           "Süt",
           "Gluten"
@@ -73,21 +117,23 @@
     ],
     "GECE": [
       {
-        "name": "KÖYLÜ ÇORBA",
+        "name": "TAVUK SUYU ÇORBA",
         "allergens": [
-          "Gluten"
+          "Süt",
+          "Gluten",
+          "Yumurta"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "YEŞİLLİK",
+        "name": "HAŞLAMA PATATES",
         "allergens": [],
         "section": "NORMAL"
       },
       {
-        "name": "BEYAZ PEYNİR(KAH)",
+        "name": "PİKNİK TAHİN PEKMEZ(KAH)",
         "allergens": [
-          "Süt"
+          "Susam"
         ],
         "section": "NORMAL"
       },
@@ -100,5 +146,5 @@
       }
     ]
   },
-  "updatedAt": "2026-11-22T04:50:26.175Z"
+  "updatedAt": "2026-11-23T03:49:17.497Z"
 }
