@@ -1,46 +1,45 @@
 {
-  "date": "23.11.2026",
+  "date": "24.11.2026",
   "meals": {
     "ÖĞLE": [
       {
-        "name": "ANTEP ÇORBA",
+        "name": "KR.SEBZE ÇORBASI",
         "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "ETLİ LAHANA SARMA",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "SEBZELİ AVCI BÖREĞİ",
-        "allergens": [
+          "Süt",
           "Gluten",
           "Yumurta"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "GAR.YOĞURT",
+        "name": "PİLAV ÜSTÜ PİLİÇ DÖNER",
+        "allergens": [
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "BARDAK AYRAN",
         "allergens": [
           "Süt"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "ŞAMBALİ TATLISI",
+        "name": "TEL KADAYIF",
         "allergens": [
-          "Süt",
-          "Gluten"
+          "Gluten",
+          "Sert kabuklu"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "RUS SALATASI",
+        "name": "ROKA SALATASI",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "COSLOS SALATA",
         "allergens": [
           "Süt",
           "Yumurta"
@@ -48,19 +47,26 @@
         "section": "SALATBAR"
       },
       {
-        "name": "YEŞİL SALATA",
+        "name": "MAYD.TURP SALATA",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "Z.YAĞ.PIRASA",
-        "allergens": [],
+        "name": "Z.YAĞ.KEREVİZ",
+        "allergens": [
+          "Kereviz"
+        ],
         "section": "SALATBAR"
       }
     ],
     "AKŞAM": [
       {
-        "name": "RUS SALATASI",
+        "name": "ROKA SALATASI",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "COSLOS SALATA",
         "allergens": [
           "Süt",
           "Yumurta"
@@ -68,56 +74,52 @@
         "section": "SALATBAR"
       },
       {
-        "name": "YEŞİL SALATA",
+        "name": "MAYD.TURP SALATA",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "Z.YAĞ.PIRASA",
-        "allergens": [],
+        "name": "Z.YAĞ.KEREVİZ",
+        "allergens": [
+          "Kereviz"
+        ],
         "section": "SALATBAR"
       },
       {
-        "name": "ANTEP ÇORBA",
+        "name": "KR.SEBZE ÇORBASI",
         "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "ETLİ LAHANA SARMA",
-        "allergens": [
-          "Gluten"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "SEBZELİ AVCI BÖREĞİ",
-        "allergens": [
+          "Süt",
           "Gluten",
           "Yumurta"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "GAR.YOĞURT",
+        "name": "PİLAV ÜSTÜ PİLİÇ DÖNER",
+        "allergens": [
+          "Gluten"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "BARDAK AYRAN",
         "allergens": [
           "Süt"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "ŞAMBALİ TATLISI",
+        "name": "TEL KADAYIF",
         "allergens": [
-          "Süt",
-          "Gluten"
+          "Gluten",
+          "Sert kabuklu"
         ],
         "section": "NORMAL"
       }
     ],
     "GECE": [
       {
-        "name": "TAVUK SUYU ÇORBA",
+        "name": "KR.SEBZE ÇORBASI",
         "allergens": [
           "Süt",
           "Gluten",
@@ -126,25 +128,27 @@
         "section": "NORMAL"
       },
       {
-        "name": "HAŞLAMA PATATES",
-        "allergens": [],
-        "section": "NORMAL"
-      },
-      {
-        "name": "PİKNİK TAHİN PEKMEZ(KAH)",
+        "name": "ÜZÜMLÜ KURABİYE",
         "allergens": [
-          "Susam"
+          "Süt",
+          "Gluten",
+          "Yumurta"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "YUMURTA(KAH)",
+        "name": "PİKNİK BAL(KAH)",
+        "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "SÜT KG",
         "allergens": [
-          "Yumurta"
+          "Süt"
         ],
         "section": "NORMAL"
       }
     ]
   },
-  "updatedAt": "2026-11-23T05:05:41.749Z"
+  "updatedAt": "2026-11-24T03:47:01.255Z"
 }
