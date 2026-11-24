@@ -62,7 +62,10 @@
   .glass{background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(255,255,255,.03)),rgba(9,16,30,.46);border:1px solid var(--glass-line);box-shadow:0 8px 32px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.18);-webkit-backdrop-filter:blur(18px) saturate(150%);backdrop-filter:blur(18px) saturate(150%)}
   @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.glass{background:rgba(24,38,60,.92)}}
   header{border-radius:26px;padding:20px 20px 18px;margin-bottom:14px;position:relative}
-  .theme-btn{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;border:1px solid var(--glass-line);background:rgba(255,255,255,.14);color:var(--ink);display:grid;place-items:center;cursor:pointer;padding:0;transition:background .25s,transform .2s}
+  .brand-row{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+  .brand-row .brand{margin-bottom:0}
+  .flag{width:34px;height:23px;flex:none;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}
+  .theme-btn{position:absolute;top:56px;right:14px;width:44px;height:44px;border-radius:50%;border:1px solid var(--glass-line);background:rgba(255,255,255,.14);color:var(--ink);display:grid;place-items:center;cursor:pointer;padding:0;transition:background .25s,transform .2s}
   .theme-btn:hover{background:rgba(255,255,255,.26)}
   .theme-btn:active{transform:scale(.92)}
   .theme-btn:focus-visible{outline:3px solid #fff;outline-offset:2px}
@@ -86,8 +89,26 @@
   li::before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:4px;border-radius:0 4px 4px 0;background:linear-gradient(180deg,var(--accent),var(--accent2))}
   ul.salad li::before{background:linear-gradient(180deg,#5ee38f,#2dd4bf)}
   .tag{display:inline-block;margin:6px 6px 0 0;padding:2px 10px;border-radius:999px;background:var(--tag-bg);border:1px solid rgba(255,255,255,.14);color:var(--tag);font-size:.72rem;font-weight:700}
+  .alerjen-lbl{display:inline-block;margin:6px 6px 0 0;padding:2px 0;font-size:.76rem;font-weight:800;letter-spacing:.02em;color:var(--accent)}
+  html[data-theme="light"] .alerjen-lbl{color:var(--tag)}
   .note{color:var(--muted);font-size:.85rem;margin-top:22px;text-align:center}
   .warn{background:rgba(255,200,80,.18);border:1px solid rgba(255,200,80,.4);color:#ffe9b8;padding:10px 12px;border-radius:14px;margin-bottom:14px;font-size:.9rem}
+  .info{margin-top:16px;border-radius:18px;overflow:hidden}
+  .info summary{list-style:none;cursor:pointer;padding:14px 16px;font-weight:700;font-size:.95rem;display:flex;align-items:center;gap:10px}
+  .info summary::-webkit-details-marker{display:none}
+  .info summary svg{width:20px;height:20px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .info summary::after{content:"";margin-left:auto;width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .2s;flex:none}
+  .info[open] summary::after{transform:rotate(-135deg)}
+  .info summary:focus-visible{outline:3px solid #fff;outline-offset:-3px}
+  html[data-theme="light"] .info summary:focus-visible{outline-color:#0f2038}
+  html[data-theme="light"] .info summary svg{stroke:var(--tag)}
+  .info .body{padding:0 16px 16px;display:grid;gap:10px;font-size:.92rem}
+  .info .row{display:flex;gap:10px;align-items:baseline}
+  .info .row .tag{margin:0;flex:none;min-width:78px;text-align:center}
+  .info .def{line-height:1.45;padding-bottom:10px;border-bottom:1px solid var(--glass-line)}
+  .info .def b{color:var(--accent)}
+  html[data-theme="light"] .info .def b{color:var(--tag)}
+  .info .note2{color:var(--muted);font-size:.82rem;line-height:1.4;margin-top:4px}
   @media (prefers-reduced-motion:reduce){.blobs i{animation:none}*{transition:none!important}}
 </style>
 </head>
@@ -96,13 +117,20 @@
 <main>
   <header class="glass">
     <button class="theme-btn" id="themeBtn" type="button" aria-label="Temayı değiştir"></button>
-    <div class="brand"><b>YAZAKI WIRING</b> <span>MUDANYA</span></div>
+    <div class="brand-row">
+      <div class="brand"><b>YAZAKI WIRING</b> <span>MUDANYA</span></div>
+      <svg class="flag" viewBox="0 0 36 24" role="img" aria-label="Türkiye ve Japonya bayrakları"><defs><clipPath id="fc"><rect width="36" height="24" rx="4"/></clipPath><clipPath id="ft"><path d="M0 0H22L14 24H0z"/></clipPath></defs><g clip-path="url(#fc)"><rect width="36" height="24" fill="#fff"/><g clip-path="url(#ft)"><rect width="36" height="24" fill="#E30A17"/><circle cx="8" cy="12" r="5.5" fill="#fff"/><circle cx="9.7" cy="12" r="4.4" fill="#E30A17"/><polygon fill="#fff" points="16.7,12 15.11,12.59 15.04,14.28 13.99,12.95 12.36,13.41 13.3,12 12.36,10.59 13.99,11.05 15.04,9.72 15.11,11.41"/></g><circle cx="28" cy="12" r="4.2" fill="#BC002D"/></g></svg>
+    </div>
     <h1>Bugünün Menüsü</h1>
     <div class="date" id="date">Yükleniyor…</div>
   </header>
   <div class="tabs glass" role="tablist" id="tabs"></div>
   <div id="warn"></div>
   <div id="list"></div>
+  <details class="glass info" id="info" hidden>
+    <summary><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>Alerjen etiketleri ne demek?</summary>
+    <div class="body" id="infoBody"></div>
+  </details>
   <div class="note" id="note"></div>
 </main>
 <script>
@@ -128,8 +156,12 @@ $("themeBtn").onclick=()=>setTheme(document.documentElement.dataset.theme==="dar
 const title=s=>s.replace(/\s*\(\s*kah\.?\s*\)\s*/gi," ").trim().toLocaleLowerCase("tr").replace(/(^|[\s(\/.-])(\p{L})/gu,(m,a,b)=>a+b.toLocaleUpperCase("tr"));
 const DAYS=["Pazar","Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"],MON=["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"];
 const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
-const row=x=>`<li class="glass">${esc(title(x.name))}${x.allergens.length?"<br>"+x.allergens.map(a=>`<span class="tag">${esc(a)}</span>`).join(""):""}</li>`;
+const row=x=>`<li class="glass">${esc(title(x.name))}${x.allergens.length?'<br><span class="alerjen-lbl">Alerjen:</span>'+x.allergens.map(a=>`<span class="tag">${esc(a)}</span>`).join(""):""}</li>`;
 const saladRow=x=>`<li class="glass">${esc(title(x.name))}</li>`;
+const ALERJEN={"süt":"Süt ve süt ürünleri (yoğurt, peynir, tereyağı, krema gibi)","gluten":"Buğday, arpa, çavdar gibi tahıllar: ekmek, makarna, un, bulgur","yumurta":"Yumurta ya da yumurtalı hamur işi, sos ve tatlılar","kereviz":"Kereviz ya da kerevizli ürünler (çorba ve soslarda sık geçer)","sert kabuklu":"Fındık, ceviz, badem, antep fıstığı gibi sert kabuklu yemişler","yer fıstığı":"Yer fıstığı ve içeren ürünler","soya":"Soya ve soya ürünleri","balık":"Balık ve balık ürünleri","susam":"Susam ve susam ürünleri (tahin dahil)","hardal":"Hardal ve hardal içeren soslar","kabuklu deniz ürünleri":"Karides, yengeç, ıstakoz gibi kabuklu deniz ürünleri","sülfit":"Sülfür dioksit ve sülfitler (kurutulmuş meyve, bazı içecekler)"};
+function fillInfo(d){const set=new Set();Object.values(d.meals).forEach(a=>a.forEach(x=>x.allergens.forEach(t=>set.add(t))));if(!set.size)return;
+  const rows=[...set].sort((a,b)=>a.localeCompare(b,"tr")).map(t=>`<div class="row"><span class="tag">${esc(t)}</span><span>${esc(ALERJEN[t.toLocaleLowerCase("tr")]||"Menü kaynağında bu etiketle belirtilmiş.")}</span></div>`).join("");
+  $("infoBody").innerHTML='<div class="def"><b>Alerjen nedir?</b> Bazı kişilerde alerjik tepkiye yol açabilen maddeye alerjen denir.</div>'+rows+'<div class="note2">Bilgiler yemekhanenin menü sayfasından olduğu gibi alınır. Alerjiniz varsa yemekhane ya da mutfakla teyit edin.</div>';$("info").hidden=false}
 fetch("menu.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
   const [dd,mm,yy]=d.date.split(".").map(Number);const dt=new Date(yy,mm-1,dd);
   $("date").textContent=`${dd} ${MON[mm-1]} ${yy}, ${DAYS[dt.getDay()]}`;
@@ -149,6 +181,7 @@ fetch("menu.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).then(
       +(salad.length?`<div class="sec salad-sec">${ICON_SALAD}Salatabar</div><ul class="salad">${salad.map(saladRow).join("")}</ul>`:"");
   }
   render();
+  fillInfo(d);
   $("note").textContent="Generated by Eray";
 }).catch(()=>{$("date").textContent="Menü şu an yüklenemedi, biraz sonra tekrar deneyin."});
 </script>
