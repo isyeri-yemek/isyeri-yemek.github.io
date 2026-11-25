@@ -1,9 +1,9 @@
 {
-  "date": "24.11.2026",
+  "date": "25.11.2026",
   "meals": {
     "ÖĞLE": [
       {
-        "name": "KR.SEBZE ÇORBASI",
+        "name": "DÜĞÜN ÇORBASI",
         "allergens": [
           "Süt",
           "Gluten",
@@ -12,81 +12,66 @@
         "section": "NORMAL"
       },
       {
-        "name": "PİLAV ÜSTÜ PİLİÇ DÖNER",
+        "name": "KURU FASULYE",
         "allergens": [
           "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "BARDAK AYRAN",
+        "name": "MELEK PİLAVI",
         "allergens": [
-          "Süt"
+          "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "TEL KADAYIF",
-        "allergens": [
-          "Gluten",
-          "Sert kabuklu"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "ROKA SALATASI",
-        "allergens": [],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "COSLOS SALATA",
+        "name": "SICAK SÜT HELVASI",
         "allergens": [
           "Süt",
+          "Gluten",
           "Yumurta"
         ],
-        "section": "SALATBAR"
+        "section": "NORMAL"
       },
       {
-        "name": "MAYD.TURP SALATA",
+        "name": "KIRMIZI BAHAR SALATASI",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "Z.YAĞ.KEREVİZ",
+        "name": "Z.YAĞ.TÜRLÜ",
+        "allergens": [],
+        "section": "SALATBAR"
+      },
+      {
+        "name": "CACIK",
         "allergens": [
-          "Kereviz"
+          "Süt"
         ],
         "section": "SALATBAR"
       }
     ],
     "AKŞAM": [
       {
-        "name": "ROKA SALATASI",
+        "name": "KIRMIZI BAHAR SALATASI",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "COSLOS SALATA",
-        "allergens": [
-          "Süt",
-          "Yumurta"
-        ],
-        "section": "SALATBAR"
-      },
-      {
-        "name": "MAYD.TURP SALATA",
+        "name": "Z.YAĞ.TÜRLÜ",
         "allergens": [],
         "section": "SALATBAR"
       },
       {
-        "name": "Z.YAĞ.KEREVİZ",
+        "name": "CACIK",
         "allergens": [
-          "Kereviz"
+          "Süt"
         ],
         "section": "SALATBAR"
       },
       {
-        "name": "KR.SEBZE ÇORBASI",
+        "name": "DÜĞÜN ÇORBASI",
         "allergens": [
           "Süt",
           "Gluten",
@@ -95,31 +80,32 @@
         "section": "NORMAL"
       },
       {
-        "name": "PİLAV ÜSTÜ PİLİÇ DÖNER",
+        "name": "KURU FASULYE",
         "allergens": [
           "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "BARDAK AYRAN",
+        "name": "MELEK PİLAVI",
         "allergens": [
-          "Süt"
+          "Gluten"
         ],
         "section": "NORMAL"
       },
       {
-        "name": "TEL KADAYIF",
+        "name": "SICAK SÜT HELVASI",
         "allergens": [
+          "Süt",
           "Gluten",
-          "Sert kabuklu"
+          "Yumurta"
         ],
         "section": "NORMAL"
       }
     ],
     "GECE": [
       {
-        "name": "KR.SEBZE ÇORBASI",
+        "name": "DÜĞÜN ÇORBASI",
         "allergens": [
           "Süt",
           "Gluten",
@@ -128,27 +114,33 @@
         "section": "NORMAL"
       },
       {
-        "name": "ÜZÜMLÜ KURABİYE",
-        "allergens": [
-          "Süt",
-          "Gluten",
-          "Yumurta"
-        ],
-        "section": "NORMAL"
-      },
-      {
-        "name": "PİKNİK BAL(KAH)",
+        "name": "YEŞİLLİK",
         "allergens": [],
         "section": "NORMAL"
       },
       {
-        "name": "SÜT KG",
+        "name": "PİKNİK REÇEL(KAH)",
+        "allergens": [],
+        "section": "NORMAL"
+      },
+      {
+        "name": "PEYNİRLİ OMLET",
         "allergens": [
-          "Süt"
+          "Süt",
+          "Yumurta"
+        ],
+        "section": "NORMAL"
+      },
+      {
+        "name": "FISTIKLI LOKUM",
+        "allergens": [
+          "Gluten",
+          "Yumurta",
+          "Yerfıstığı"
         ],
         "section": "NORMAL"
       }
     ]
   },
-  "updatedAt": "2026-11-24T04:56:10.002Z"
+  "updatedAt": "2026-11-25T03:51:17.188Z"
 }
